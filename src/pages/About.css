@@ -1,0 +1,18 @@
+.AboutClass{
+    justify-content: center;
+    padding: 1rem;
+    height: auto;
+    width: 80em;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    font-family: 'Times New Roman';
+    text-justify: auto;
+    font-size :larger;
+}
+img {
+    height: 25px;
+    width: 25px;
+}
