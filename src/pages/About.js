@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import pythonLogo from "./../assets/python_logo.png";
 
 const About = () => {
   return (
@@ -15,10 +16,9 @@ const About = () => {
       <div className="skills">
         <div className="skill-item">
           <h2>Coding Languages</h2>
-          <img src="./../assets//python_logo.jpg" alt="Python" />
-
-          <h3>Python</h3>
-
+          <h3>
+            Python <img src={pythonLogo} alt="Python" />
+          </h3>
           <p>
             Python taught me the power of simplicity and readability in code.
             It’s my go-to language for quick scripting, data analysis, and
