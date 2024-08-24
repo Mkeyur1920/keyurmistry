@@ -7,6 +7,7 @@ const Home = () => {
     <div className="HomeClass">
       <h1>Welcome</h1>
       <h2>Hi, I'm {userName} !</h2>
+
       <p>
         I’m a dedicated Software Developer with a passion for exploring new
         technologies and solving complex problems. Over the years, I've honed my

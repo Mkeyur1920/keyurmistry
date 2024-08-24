@@ -8,3 +8,11 @@
     margin-right: auto;
 
 }
+p{
+    height: auto;
+    width: 45em;
+}
+img {
+    height: 25px;
+    width: 24px;
+}
