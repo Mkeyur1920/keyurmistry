@@ -7,3 +7,39 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #f4f4f4; 
+  }
+  
+  .loading-text {
+    font-size: 2rem;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards, bounce 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
