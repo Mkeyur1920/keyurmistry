@@ -23,6 +23,32 @@ const Home = () => {
           <img src={dummy_profile} class="random-shape-image" />
         </div>
       </div>
+
+      <div className="skill-set-container">
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              <h3>HTML</h3>
+              <div class="progress-bar">
+                <div class="progress" styles="width: 90%;"></div>
+              </div>
+            </li>
+            <li>
+              <h3>CSS</h3>
+              <div class="progress-bar">
+                <div class="progress" styles="width: 50%;"></div>
+              </div>
+            </li>
+            <li>
+              <h3>Java</h3>
+              <div class="progress-bar">
+                <div class="progress" styles="width: 85%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
   );
 };

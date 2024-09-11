@@ -35,3 +35,34 @@
   .random-shape-image:hover {
     transform: scale(1.25); /* Slightly enlarge the image on hover */
   }
+
+  #skills {
+    text-align: center;
+  }
+  
+  #skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #skills li {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+  }
+
+  .skill-set-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
