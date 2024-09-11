@@ -1,8 +1,7 @@
 import React from "react";
 import "./About.css";
-import pythonLogo from "./../assets/python_logo.png";
 import { SocialIcon } from "react-social-icons";
-import { DiJava, DiPython, DiKotlin } from "react-icons/di";
+import { DiJava, DiPython } from "react-icons/di";
 
 const About = () => {
   return (

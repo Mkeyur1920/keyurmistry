@@ -1,18 +1,37 @@
-.HomeClass{
+.home-container{
     justify-content: center;
-    padding: 1rem;
-    height: auto;
     width: 80em;
-    margin-top: 2px;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: row;
+    display: flex;
 
 }
-p{
+.intro-class{
     height: auto;
-    width: 45em;
+    width: 55em;
 }
-img {
-    height: 25px;
-    width: 24px;
+.profile-picture-class{
+    flex-grow: 2;
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .random-shape-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    transition: all 0.3s ease; /* Smooth transition for shape changes */
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional: Add hover effect to trigger new random shape */
+  .random-shape-image:hover {
+    transform: scale(1.25); /* Slightly enlarge the image on hover */
+  }
