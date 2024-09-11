@@ -15,3 +15,8 @@ img {
     height: 25px;
     width: 25px;
 }
+
+.social-links{
+    display: flex;
+    column-gap: 10px;
+}
