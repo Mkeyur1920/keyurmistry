@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
 import pythonLogo from "./../assets/python_logo.png";
+import { SocialIcon } from "react-social-icons";
+import { DiJava, DiPython, DiKotlin } from "react-icons/di";
 
 const About = () => {
   return (
@@ -17,8 +19,11 @@ const About = () => {
         <div className="skill-item">
           <h2>Coding Languages</h2>
           <h3>
-            Python <img src={pythonLogo} alt="Python" />
+            Python <DiPython />
           </h3>
+          {/* <h3>
+            Python <img src={pythonLogo} alt="Python" />
+          </h3> */}
           <p>
             Python taught me the power of simplicity and readability in code.
             It’s my go-to language for quick scripting, data analysis, and
@@ -27,7 +32,10 @@ const About = () => {
         </div>
 
         <div className="skill-item">
-          <h3>Java</h3>
+          <h3>
+            Java <DiJava />
+          </h3>
+
           <p>
             Java helped me understand the importance of object-oriented design
             and scalability in large-scale applications.
@@ -41,6 +49,47 @@ const About = () => {
             development, making my mobile applications more efficient and
             enjoyable to build.
           </p>
+        </div>
+      </div>
+      <div className="social-media-section">
+        <h2>Connect with Me</h2>
+        <p>Feel free to connect with me on my social media accounts:</p>
+        <div class="social-links">
+          <div>
+            <SocialIcon
+              url="www.linkedin.com"
+              aria-label="Keyur's LinkedIn"
+              href="https://www.linkedin.com/in/keyurmistry19"
+            />
+          </div>
+          <div>
+            <SocialIcon
+              url="www.twitter.com"
+              aria-label="Keyur's Twitter"
+              href="https://www.twitter.com/_keyurmistry"
+            />
+          </div>
+          <div>
+            <SocialIcon
+              url="www.github.com"
+              aria-label="Keyur's Git hub"
+              href="https://www.github.com/Mkeyur1920"
+            />
+          </div>
+          <div>
+            <SocialIcon
+              url="www.email.com"
+              label="Send Me Email"
+              href="keyurmistry19@gmail.com"
+            />
+          </div>
+          <div>
+            <SocialIcon
+              url="www.whatsapp.com"
+              aria-label="Keyur's Git hub"
+              label="1234567555"
+            />
+          </div>
         </div>
       </div>
     </div>
