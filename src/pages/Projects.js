@@ -5,6 +5,8 @@ const Projects = () => {
   const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
+    document.title = "Projects - Keyur's Portfolio"; // Reset the title when component unmounts
+
     // Trigger the message to show after a delay
     setTimeout(() => {
       setShowMessage(true);

@@ -3,37 +3,36 @@
     width: 80em;
     margin-left: auto;
     margin-right: auto;
-    flex-direction: row;
-    display: flex;
 
 }
-.intro-class{
+.intro-container{
     height: auto;
     width: 55em;
+    float: left;
 }
-.profile-picture-class{
-    flex-grow: 2;
+.profile-container{
+  float: right;
+  margin-top: 80px;
+  margin-right: 100px;
+    
 }
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
+
+
+
   
   .random-shape-image {
     width: 150px;
     height: 150px;
     object-fit: cover; /* Ensures the image maintains aspect ratio */
     transition: all 0.3s ease; /* Smooth transition for shape changes */
-    border-radius: 50%;
+    border-radius: 55%;
     border: 2px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   /* Optional: Add hover effect to trigger new random shape */
   .random-shape-image:hover {
-    transform: scale(1.25); /* Slightly enlarge the image on hover */
+    transform: scale(1.65); /* Slightly enlarge the image on hover */
   }
 
   #skills {
@@ -63,6 +62,48 @@
 
   .skill-set-container{
     display: flex;
+    float: left;
+    margin-right: 80em;
     flex-direction: row;
-    align-items: flex-start;
+    gap:5em;
   }
+
+.item{
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    text-wrap: wrap;
+    text-justify: auto;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    transition: all 0.4s ease; /* Smooth transition for shape changes */
+    border-radius: 35%;
+    border: 2px solid #7e7070;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.item:hover{
+  transform: scale(1.25);
+}
+
+/* Overlay (clickable element) */
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  z-index: 10;
+  cursor: pointer;
+  transition: backdrop-filter 0.3s ease;
+}
+/* Add blur to background when this class is applied */
+.blur + .background-content {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari Support */
+}
+
+

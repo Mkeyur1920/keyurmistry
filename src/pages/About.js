@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import { SocialIcon } from "react-social-icons";
 import { DiJava, DiPython } from "react-icons/di";
 
 const About = () => {
+  useEffect(() => {
+    return () => {
+      document.title = "About - Keyur's Portfolio"; // Reset the title when component unmounts
+    };
+  }, []);
   return (
     <div className="AboutClass">
       <h1>About Me</h1>
