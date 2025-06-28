@@ -3,33 +3,94 @@ import "./Projects.css";
 
 const Projects = () => {
   const [showMessage, setShowMessage] = useState(false);
+  const [isNullList, setIsNullList] = useState(false);
+
+  const projectList = [
+    {
+      title: "Driver Mileage Tracker",
+      description:
+        "Mobile-first app for logging daily vehicle kilometers with image uploads and analytics. Built for field drivers to streamline monthly reporting.",
+      techStack: ["React Native", "Java", "Postgres", "Spring Boot"],
+      github: "https://github.com/yourusername/drivermileagetracker",
+      demo: "", // optional live demo link
+    },
+    {
+      title: "Real-time Attendance Tracker",
+      description:
+        "One-click attendance system using facial recognition powered by YOLOv8. Web frontend with Angular, backend in Java + Python integration.",
+      techStack: ["Angular", "YOLOv8", "Java", "Python"],
+      github: "https://github.com/yourusername/attendance-tracker",
+      demo: "",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "Personal portfolio website to showcase my skills, tools, and projects with smooth animations and modular React components.",
+      techStack: ["React", "CSS3", "JavaScript"],
+      github: "https://github.com/yourusername/portfolio",
+      demo: "https://keyur-portfolio.com",
+    },
+  ];
 
   useEffect(() => {
-    document.title = "Projects - Keyur's Portfolio"; // Reset the title when component unmounts
+    document.title = "Projects - Keyur's Portfolio";
+    setIsNullList(projectList.length === 0); // ✅ validate list
 
-    // Trigger the message to show after a delay
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setShowMessage(true);
-    }, 500); // Adjust delay as needed (500ms here)
+    }, 500);
+
+    return () => clearTimeout(timer); // Cleanup
   }, []);
 
   return (
-    <div className="PojectsClass">
+    <div className="projects-container">
       <div className="loading-container">
-        {showMessage && (
-          <h1 className="loading-text">
-            Page is working... Stay tuned with me ! :) ⚒️
+        {showMessage && isNullList && (
+          <h1 className="loading-text fade-in">
+            🚧 Page is under construction... Stay tuned! ⚒️
           </h1>
         )}
       </div>
-      {/* <h1>My Projects</h1>
-      <p>Page on working...::) stay tune with me !!</p> */}
-      {/* <p>Here are some of the projects I've worked on:</p>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul> */}
+
+      <div className="projects-grid">
+        {!isNullList &&
+          projectList.map((project, index) => (
+            <div className="project-card" key={index}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-stack">
+                {project.techStack.map((tech, i) => (
+                  <span key={i} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="project-links">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    GitHub
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+      </div>
     </div>
   );
 };

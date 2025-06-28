@@ -1,22 +1,106 @@
-.AboutClass{
-    justify-content: center;
-    padding: 1rem;
-    height: auto;
-    width: 80em;
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-p {
-    font-family: 'Times New Roman';
-    font-size :larger;
-}
-img {
-    height: 25px;
-    width: 25px;
+.about-container {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fbfc;
+  color: #2c3e50;
+  animation: fadeIn 1s ease-in;
 }
 
-.social-links{
-    display: flex;
-    column-gap: 10px;
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sub-section-title {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007acc;
+}
+
+.about-intro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #444;
+  text-align: center;
+}
+
+.language-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.language-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+}
+
+.lang-icon {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.python {
+  color: #3472a6;
+}
+.java {
+  color: #ec2025;
+}
+.kotlin {
+  color: #7961f1;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.connect-text {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.fade-in {
+  animation: fade-in 0.6s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .language-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-card {
+    width: 80%;
+  }
 }

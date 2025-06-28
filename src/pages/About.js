@@ -2,99 +2,62 @@ import React, { useEffect } from "react";
 import "./About.css";
 import { SocialIcon } from "react-social-icons";
 import { DiJava, DiPython } from "react-icons/di";
+import { SiKotlin } from "react-icons/si";
 
 const About = () => {
   useEffect(() => {
-    return () => {
-      document.title = "About - Keyur's Portfolio"; // Reset the title when component unmounts
-    };
+    document.title = "About - Keyur's Portfolio";
   }, []);
-  return (
-    <div className="AboutClass">
-      <h1>About Me</h1>
 
-      <p>
-        Endeavoring Software Engineer | Work goal to give comprehensible
-        services or product to world | Tyro in Google Cloud | PYTHON | JAVA .
-        Data Structure | KOTLIN | Angular | #breakdown
+  return (
+    <div className="about-container">
+      <h1 className="section-title">🙋‍♂️ About Me</h1>
+
+      <div className="about-intro fade-in">
+        <p>
+          I'm <strong>Keyur Mistry</strong>, a passionate software developer
+          enthusiastic about building scalable backend systems and clean, modern
+          frontend interfaces. My journey revolves around solving real-world
+          problems with logical precision and creative flair.
+        </p>
+        <p>
+          I enjoy working with modern tools and tech—whether it's building APIs
+          in Java, writing Python scripts, exploring Android with Kotlin, or
+          deploying on cloud platforms.
+        </p>
+      </div>
+
+      <h2 className="sub-section-title">📲 Connect with Me</h2>
+      <p className="connect-text">
+        I’d love to network, collaborate or simply have a tech chat. Reach out!
       </p>
 
-      <div className="skills">
-        <div className="skill-item">
-          <h2>Coding Languages</h2>
-          <h3>
-            Python <DiPython />
-          </h3>
-          {/* <h3>
-            Python <img src={pythonLogo} alt="Python" />
-          </h3> */}
-          <p>
-            Python taught me the power of simplicity and readability in code.
-            It’s my go-to language for quick scripting, data analysis, and
-            automation.
-          </p>
-        </div>
-
-        <div className="skill-item">
-          <h3>
-            Java <DiJava />
-          </h3>
-
-          <p>
-            Java helped me understand the importance of object-oriented design
-            and scalability in large-scale applications.
-          </p>
-        </div>
-
-        <div className="skill-item">
-          <h3>Kotlin</h3>
-          <p>
-            Kotlin brought me a modern and concise approach to Android
-            development, making my mobile applications more efficient and
-            enjoyable to build.
-          </p>
-        </div>
-      </div>
-      <div className="social-media-section">
-        <h2>Connect with Me</h2>
-        <p>Feel free to connect with me on my social media accounts:</p>
-        <div class="social-links">
-          <div>
-            <SocialIcon
-              url="www.linkedin.com"
-              aria-label="Keyur's LinkedIn"
-              href="https://www.linkedin.com/in/keyurmistry19"
-            />
-          </div>
-          <div>
-            <SocialIcon
-              url="www.twitter.com"
-              aria-label="Keyur's Twitter"
-              href="https://www.twitter.com/_keyurmistry"
-            />
-          </div>
-          <div>
-            <SocialIcon
-              url="www.github.com"
-              aria-label="Keyur's Git hub"
-              href="https://www.github.com/Mkeyur1920"
-            />
-          </div>
-          <div>
-            <SocialIcon
-              url="www.email.com"
-              label="Send Me Email"
-              href="keyurmistry19@gmail.com"
-            />
-          </div>
-          <div>
-            <SocialIcon
-              url="www.whatsapp.com"
-              aria-label="Keyur's Git hub"
-              label="1234567555"
-            />
-          </div>
-        </div>
+      <div className="social-links">
+        <SocialIcon
+          url="https://www.linkedin.com/in/keyurmistry19"
+          aria-label="LinkedIn"
+          target="_blank"
+        />
+        <SocialIcon
+          url="https://www.twitter.com/_keyurmistry"
+          aria-label="Twitter"
+          target="_blank"
+        />
+        <SocialIcon
+          url="https://github.com/Mkeyur1920"
+          aria-label="GitHub"
+          target="_blank"
+        />
+        <SocialIcon
+          url="mailto:keyurmistry19@gmail.com"
+          aria-label="Email"
+          network="email"
+        />
+        <SocialIcon
+          url="https://wa.me/9586379555" // ✅ Replace with actual number
+          aria-label="WhatsApp"
+          network="whatsapp"
+        />
       </div>
     </div>
   );
