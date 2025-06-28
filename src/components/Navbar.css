@@ -1,35 +1,72 @@
-nav {
-    background-color: #333;
-  
-    justify-content: center;
-    padding: 1rem;
-    height: auto;
-    width: 80em;
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  li {
-    margin: 0 1rem;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #00bfff;
-  }
-  
+/* Reset */
+.navbar,
+.navbar * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Container */
+.navbar {
+  background: linear-gradient(90deg, #2c3e50, #4ca1af); /* Gradient */
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Flexbox Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-logo:hover {
+  color: #ffdf00;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  backdrop-filter: blur(2px);
+}
+
+/* Active Link */
+.nav-link.active {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+}

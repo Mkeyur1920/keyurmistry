@@ -115,12 +115,47 @@ const Home = () => {
         </div>
       </section>
 
+      {/* AI / ML / DL Section */}
+      <section className="ai-section">
+        <h4>AI / ML / Deep Learning</h4>
+        <div className="ai-grid">
+          <div className="ai-card">
+            <h5>Machine Learning</h5>
+            <p>
+              Skilled in supervised & unsupervised models like SVM, Random
+              Forest, and KMeans using Python, scikit-learn, and pandas.
+            </p>
+          </div>
+          <div className="ai-card">
+            <h5>Deep Learning</h5>
+            <p>
+              Hands-on with CNNs, RNNs, and YOLOv8 using TensorFlow & PyTorch.
+              Applied to tasks like object detection and facial recognition.
+            </p>
+          </div>
+          <div className="ai-card">
+            <h5>AI Concepts</h5>
+            <p>
+              Practical knowledge of NLP, computer vision, reinforcement
+              learning, and ethical AI applications in real-world systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer Call to Action */}
       <footer className="footer-container">
-        <p>Looking to collaborate or hire?</p>
-        <a href="/Keyur_Mistry_Resume.pdf" className="resume-btn" download>
-          Download Resume
-        </a>
+        <div className="footer-content">
+          <h2 className="footer-heading">🤝 Let's Work Together!</h2>
+          <p className="footer-text">
+            Whether it's a job opportunity or a collaborative project — I'm all
+            ears.
+          </p>
+
+          <a href="/KeyurMistryResume.pdf" className="resume-btn" download>
+            📄 Download Resume
+          </a>
+        </div>
       </footer>
     </div>
   );
