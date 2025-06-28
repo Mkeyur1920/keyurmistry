@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import { SocialIcon } from "react-social-icons";
-import { DiJava, DiPython } from "react-icons/di";
-import { SiKotlin } from "react-icons/si";
 
 const About = () => {
   useEffect(() => {
@@ -27,7 +25,7 @@ const About = () => {
         </p>
       </div>
 
-      <h2 className="sub-section-title">📲 Connect with Me</h2>
+      <h2 className="section-title">📲 Connect with Me</h2>
       <p className="connect-text">
         I’d love to network, collaborate or simply have a tech chat. Reach out!
       </p>

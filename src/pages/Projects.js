@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         "Mobile-first app for logging daily vehicle kilometers with image uploads and analytics. Built for field drivers to streamline monthly reporting.",
       techStack: ["React Native", "Java", "Postgres", "Spring Boot"],
-      github: "https://github.com/yourusername/drivermileagetracker",
+      github: "https://github.com/Mkeyur1920/DriverMileageTracker.git",
       demo: "", // optional live demo link
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         "One-click attendance system using facial recognition powered by YOLOv8. Web frontend with Angular, backend in Java + Python integration.",
       techStack: ["Angular", "YOLOv8", "Java", "Python"],
-      github: "https://github.com/yourusername/attendance-tracker",
+      github: "https://github.com/Mkeyur1920/LiveAttendanceCallSystem.git",
       demo: "",
     },
     {
@@ -27,8 +27,8 @@ const Projects = () => {
       description:
         "Personal portfolio website to showcase my skills, tools, and projects with smooth animations and modular React components.",
       techStack: ["React", "CSS3", "JavaScript"],
-      github: "https://github.com/yourusername/portfolio",
-      demo: "https://keyur-portfolio.com",
+      github: "https://github.com/Mkeyur1910/keyurmistry.git",
+      demo: "https://keyurmistry.vercel.app",
     },
   ];
 
@@ -49,6 +49,13 @@ const Projects = () => {
         {showMessage && isNullList && (
           <h1 className="loading-text fade-in">
             🚧 Page is under construction... Stay tuned! ⚒️
+          </h1>
+        )}
+      </div>
+      <div className="loading-container">
+        {showMessage && (
+          <h1 className="loading-text fade-in">
+            🚧 Projects... Stay tuned! ⚒️
           </h1>
         )}
       </div>

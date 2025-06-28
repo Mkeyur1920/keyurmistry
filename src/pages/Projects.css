@@ -4,6 +4,14 @@
   font-family: "Segoe UI", sans-serif;
   min-height: 100vh;
 }
+.loading-container {
+  display: flex;
+  justify-content: center;   /* Horizontally center */
+  align-items: center;       /* Vertically center */
+  height: 10vh;             /* Full viewport height */
+  text-align: center;
+}
+
 
 .loading-text {
   font-size: 1.8rem;
