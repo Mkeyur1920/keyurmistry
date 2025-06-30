@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   useEffect(() => {
-    document.title = "Keyur's Portfolio"; // Corrected placement
+    document.title = "Keyur's Portfolio";
   }, []);
 
   return (
