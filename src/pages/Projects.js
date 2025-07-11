@@ -12,7 +12,7 @@ const Projects = () => {
         "Mobile-first app for logging daily vehicle kilometers with image uploads and analytics. Built for field drivers to streamline monthly reporting.",
       techStack: ["React Native", "Java", "Postgres", "Spring Boot"],
       github: "https://github.com/Mkeyur1920/DriverMileageTracker.git",
-      demo: "", // optional live demo link
+      demo: "https://driver-mileage-tracker-app.vercel.app/auth/login", // optional live demo link
     },
     {
       title: "Real-time Attendance Tracker",
