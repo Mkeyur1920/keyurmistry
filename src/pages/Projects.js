@@ -3,7 +3,6 @@ import "./Projects.css";
 
 const Projects = () => {
   const [showMessage, setShowMessage] = useState(false);
-  const [isNullList, setIsNullList] = useState(false);
 
   const projectList = [
     {
@@ -32,15 +31,16 @@ const Projects = () => {
     },
   ];
 
+  const isNullList = projectList.length === 0;
+
   useEffect(() => {
     document.title = "Projects - Keyur's Portfolio";
-    setIsNullList(projectList.length === 0); // ✅ validate list
 
     const timer = setTimeout(() => {
       setShowMessage(true);
     }, 500);
 
-    return () => clearTimeout(timer); // Cleanup
+    return () => clearTimeout(timer);
   }, []);
 
   return (

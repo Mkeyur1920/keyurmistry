@@ -46,13 +46,11 @@ const Home = () => {
     },
   ];
 
-  const [isBlurred, setIsBlurred] = useState(false);
+  const [isBlurred] = useState(false);
 
   useEffect(() => {
     document.title = "Home - Keyur's Portfolio";
   }, []);
-
-  // const toggleBlur = () => setIsBlurred(!isBlurred);
 
   return (
     <div className="home-container">
