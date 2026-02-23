@@ -1,15 +1,16 @@
 .about-container {
-  padding: 2rem;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f9fbfc;
-  color: #2c3e50;
-  animation: fadeIn 1s ease-in;
+  padding: 0.35rem 0.15rem 1rem;
+  color: var(--text-primary);
+  display: grid;
+  gap: 0.75rem;
+  animation: fadeIn 460ms ease-in;
 }
 
 .section-title {
+  margin: 0;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: clamp(1.35rem, 3.2vw, 2rem);
+  letter-spacing: 0.01em;
 }
 
 .sub-section-title {
@@ -20,12 +21,22 @@
 }
 
 .about-intro {
-  max-width: 800px;
-  margin: 0 auto 2rem;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(1rem, 2vw, 1.6rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  background:
+    linear-gradient(155deg, rgba(255, 255, 255, 0.97), rgba(238, 248, 255, 0.88));
+  box-shadow: var(--shadow-sm);
   line-height: 1.6;
-  font-size: 1.05rem;
-  color: #444;
+  font-size: 1rem;
+  color: var(--text-secondary);
   text-align: center;
+}
+
+.about-intro p {
+  margin: 0.4rem 0;
 }
 
 .language-grid {
@@ -68,14 +79,15 @@
 .social-links {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.35rem;
 }
 
 .connect-text {
   text-align: center;
-  margin-bottom: 1rem;
-  color: #444;
+  margin: 0;
+  color: var(--text-secondary);
 }
 
 .fade-in {
@@ -95,6 +107,10 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .about-intro {
+    text-align: left;
+  }
+
   .language-grid {
     flex-direction: column;
     align-items: center;

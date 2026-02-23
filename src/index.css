@@ -1,13 +1,57 @@
+:root {
+  --bg-base: #f4f7fb;
+  --bg-surface: #ffffff;
+  --bg-surface-soft: #f8fbff;
+  --text-primary: #0f1a2e;
+  --text-secondary: #3c4a63;
+  --text-muted: #6d7b95;
+  --brand: #0f766e;
+  --brand-strong: #0b5f58;
+  --brand-soft: #d9f3f0;
+  --accent: #0b84ff;
+  --border-soft: #dce5f1;
+  --shadow-sm: 0 6px 16px rgba(15, 26, 46, 0.08);
+  --shadow-md: 0 14px 30px rgba(15, 26, 46, 0.12);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --content-width: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: var(--text-primary);
+  font-family: "Manrope", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(circle at 10% 5%, #e7f8ff 0, transparent 35%),
+    radial-gradient(circle at 92% 12%, #e9fbf3 0, transparent 40%),
+    linear-gradient(180deg, #f7fbff 0%, var(--bg-base) 100%);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
 }
