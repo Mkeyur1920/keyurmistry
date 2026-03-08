@@ -1,0 +1,118 @@
+﻿.publication-card {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.97), rgba(242, 249, 255, 0.92));
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.05rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.publication-header {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.publication-header h3 {
+  margin: 0;
+  font-size: 1.16rem;
+  color: #0e4b7d;
+  line-height: 1.35;
+}
+
+.publication-badge {
+  width: fit-content;
+  background: #e1f4ff;
+  color: #0d5d93;
+  padding: 0.3rem 0.68rem;
+  border-radius: 999px;
+  border: 1px solid #c5e8ff;
+  font-size: 0.74rem;
+  font-weight: 650;
+}
+
+.publication-section {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.publication-section h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.authors-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.authors-list li {
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.65rem;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.authors-list strong {
+  display: block;
+  margin-bottom: 0.16rem;
+}
+
+.authors-list p,
+.publication-abstract {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.publication-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.publication-meta-grid p {
+  margin: 0;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.62rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.publication-link {
+  width: fit-content;
+  background: linear-gradient(120deg, var(--brand), #1d8a82);
+  color: #f7ffff;
+  text-decoration: none;
+  padding: 0.46rem 0.86rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.publication-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(9, 63, 58, 0.24);
+}
+
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 1rem;
+  }
+}
