@@ -150,7 +150,7 @@ const Home = () => {
             ears.
           </p>
 
-          <a href="/KeyurMistryResume.pdf" className="resume-btn" download>
+          <a href="/KeyurMistryResume8326.pdf" className="resume-btn" download>
             📄 Download Resume
           </a>
         </div>
