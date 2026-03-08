@@ -1,17 +1,17 @@
 .home-container {
-  padding: 0.3rem 0.15rem 1rem;
+  padding: 0.2rem 0.1rem 1rem;
   display: grid;
-  gap: 1.6rem;
+  gap: 1.2rem;
   color: var(--text-primary);
 }
 
 .intro-container {
   background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.95), rgba(240, 250, 255, 0.86));
+    linear-gradient(140deg, rgba(255, 255, 255, 0.96), rgba(238, 249, 255, 0.9));
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  padding: clamp(1.1rem, 2vw, 2rem);
+  padding: clamp(1.1rem, 2vw, 1.9rem);
   text-align: center;
 }
 
@@ -33,7 +33,7 @@
 
 .intro-container p {
   margin: 0.7rem auto;
-  max-width: 78ch;
+  max-width: 74ch;
   color: var(--text-secondary);
 }
 
@@ -63,14 +63,14 @@
 }
 
 .profile-image {
-  width: clamp(160px, 32vw, 220px);
-  height: clamp(160px, 32vw, 220px);
+  width: clamp(170px, 30vw, 230px);
+  height: clamp(170px, 30vw, 230px);
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #e9f7f5;
+  border: 4px solid #eaf8f5;
   box-shadow:
-    0 0 0 8px #ffffff,
-    0 14px 30px rgba(11, 76, 96, 0.2);
+    0 0 0 8px rgba(255, 255, 255, 0.9),
+    0 16px 32px rgba(11, 76, 96, 0.22);
 }
 
 .skill-set-container h4 {
@@ -81,12 +81,12 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.9rem;
 }
 
 .skill-card {
-  padding: 1rem 0.9rem;
+  padding: 1rem 0.85rem;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-soft);
@@ -98,6 +98,7 @@
   place-items: center;
   text-align: center;
   gap: 0.35rem;
+  min-height: 178px;
 }
 
 .skill-card:hover {
@@ -106,10 +107,10 @@
 }
 
 .skill-icon {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
 }
 
 .blur {
@@ -126,7 +127,7 @@
 }
 
 .tools-container {
-  background-color: rgba(255, 255, 255, 0.78);
+  background-color: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
@@ -136,7 +137,7 @@
 .tools-grid {
   margin-top: 0.9rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 0.9rem;
 }
 
@@ -156,11 +157,12 @@
   place-items: center;
   text-align: center;
   gap: 0.3rem;
+  min-height: 168px;
 }
 
 .tool-icon {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
@@ -189,7 +191,7 @@
 
 .ai-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 0.9rem;
 }
 
@@ -223,7 +225,7 @@
   background:
     linear-gradient(160deg, rgba(11, 34, 49, 0.95), rgba(13, 76, 90, 0.93));
   border-radius: var(--radius-lg);
-  padding: clamp(1.5rem, 4vw, 2.5rem) 1rem;
+  padding: clamp(1.6rem, 4vw, 2.5rem) 1rem;
   text-align: center;
   box-shadow: var(--shadow-md);
 }
@@ -266,11 +268,26 @@
 
 @media (max-width: 768px) {
   .home-container {
-    gap: 1.2rem;
+    gap: 1rem;
+  }
+
+  .intro-container p {
+    text-align: left;
   }
 
   .skill-icon {
     width: 52px;
     height: 52px;
+  }
+
+  .skills-grid,
+  .tools-grid,
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card,
+  .tool-card {
+    min-height: unset;
   }
 }
