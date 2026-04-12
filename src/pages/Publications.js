@@ -5,7 +5,7 @@ import publications from "../data/publications";
 
 const Publications = () => {
   useEffect(() => {
-    document.title = "Publications - Keyur's Portfolio";
+    document.title = "Publications - Keyur Portfolio";
   }, []);
 
   return (

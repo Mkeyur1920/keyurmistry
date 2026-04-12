@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 
 const About = () => {
   useEffect(() => {
-    document.title = "About - Keyur's Portfolio";
+    document.title = "About - Keyur Portfolio";
   }, []);
 
   return (

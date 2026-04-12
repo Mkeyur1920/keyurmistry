@@ -49,7 +49,7 @@ const Home = () => {
   const [isBlurred] = useState(false);
 
   useEffect(() => {
-    document.title = "Home - Keyur's Portfolio";
+    document.title = "Home - Keyur Portfolio";
   }, []);
 
   return (

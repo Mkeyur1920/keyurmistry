@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   useEffect(() => {
-    document.title = "Keyur's Portfolio";
+    document.title = "Keyur Portfolio";
   }, []);
 
   return (
