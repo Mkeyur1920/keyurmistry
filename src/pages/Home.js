@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import dummy_profile from "./../assest/images/mineImage.jpg";
+import dummy_profile from "./../assest/images/mineImage.jpeg";
 import dsLogo from "./../assest/logo/ds.png";
 import gitLogo from "./../assest/logo/git.png";
 import javaLogo from "./../assest/logo/javaLogo.webp";
@@ -79,7 +79,14 @@ const Home = () => {
 
       {/* Profile Image */}
       <section className="profile-container">
-        <img src={dummy_profile} alt="Profile" className="profile-image" />
+        <div className="profile-frame">
+          <div className="profile-spotlight" />
+          <img
+            src={dummy_profile}
+            alt="Keyur Mistry portrait"
+            className="profile-image"
+          />
+        </div>
       </section>
 
       {/* Skills */}
